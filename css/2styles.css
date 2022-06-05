@@ -176,23 +176,23 @@ nav {
 .hero-products{
     padding-left: 300px;
     padding-top: 50px;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color:#fff;
 }
 
 .pages-indicator{
     padding-left: 1600px;
-    font-size: 2rem;
-    color:#fff;
+    font-size: 1.5rem;
+    color: #fff;
     position: relative;
-    top: -72px;
+    top: -57px;
 }
 
 .products-container{
-    color:#000;
+    color: #000;
     top: 80px;
     background-color: #fff;
-    height: 310px;
+    height: 0px;
     width: 260px;
     border-radius: 10px;
     position: relative;
@@ -200,7 +200,7 @@ nav {
 }
 
 .product-image{
-    height: 179px;
+    height: 0px;
     position: relative;
     left: 62px;
     top: 10px;
@@ -232,7 +232,7 @@ nav {
     color:#000;
     top: -230px;
     background-color: #fff;
-    height: 310px;
+    height: 0px;
     width: 14%;
     border-radius: 10px;
     position: relative;
@@ -242,6 +242,7 @@ nav {
 .h3-love{
     text-align: center;
     font-size: 2rem;
+    display: none;
 }
 
 .h4-love{
@@ -251,13 +252,14 @@ nav {
     font-family: 'Poppins';
     position: relative;
     top: -10px;
+    display: none;
 }
 
 .products-container2{
     color:#000;
     top: -540px;
     background-color: #fff;
-    height: 310px;
+    height: 0px;
     width: 14%;
     border-radius: 10px;
     position: relative;
@@ -283,7 +285,7 @@ nav {
     color:#000;
     top: -850px;
     background-color: #fff;
-    height: 310px;
+    height: 0px;
     width: 13%;
     border-radius: 10px;
     position: relative;
@@ -306,7 +308,8 @@ nav {
 
 .products-secondrow{
     position: relative;
-    top: -800px
+    top: -800px;
+    display: none;
 }
 
 .products-thirdrow{
@@ -348,12 +351,14 @@ nav {
 
 .next-row {
     position: relative;
-    top: -1050px;
+    top: 150px;
+    left: -4px;
 }
 
 .third-row {
     position: relative;
-    top: -1850px;
+    top: 600px;
+    left: -4px;
 }
 
 
@@ -364,7 +369,7 @@ nav {
     background-color: #d1d1d1;
     padding-bottom: 4rem;
     position: relative;
-    top: -2260px;
+    top: 260px;
     left: 260px;
     width: 1580px;
     height: 200px;
@@ -475,5 +480,390 @@ nav {
 
 .logo-desc {
     display: none;
+
+}
+
+.amoeba-logo{
+    display: none;
+}
+
+.menu {
+    height: 0px;
+}
+
+.exit-side {
+    display: none;
+}
+
+.sidemenu {
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 390px) {
+    
+    body {
+        background-color: #eee;
+        width: 100%;
+        min-height: calc(100vh - 120px);
+        background-image: url('../img/Blackground.png.svg');
+        background-size: 2669px;
+        background-repeat: no-repeat;
+        height: 2669px;
+        overflow-x: hidden;
+    }
+    
+    nav {
+        width: 100%;
+        height: 60px;
+        background-color: #000;
+        padding-left: 2px;
+        align-items: center;
+    }
+    
+    .nav-container{
+        height: 50px;
+        width: 325px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: relative;
+        left: 730px;
+        top: 7px;
+        padding-left:2px;
+    }
+    
+    .nav-menu {
+        height: 35px;
+        position: relative;
+        left: 1200px;
+        padding-top: 11px;
+    }
+    
+    
+    
+    .nav-items {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search {
+        width: 600px;
+        display: flex;
+        padding-top: 15px;
+        position: relative;
+        left: 13px;
+        top: 60px;
+    }
+    
+    .search-box {
+        width: 255px;
+        height: 40px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 1px solid #d1d1d1;
+        text-transform: capitalize;
+        background: #fff;
+        color: #a9a9a9;
+        outline: none;
+    }
+    
+    .search-btn {
+        width: 25%;
+        height: 43.7px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #e4432d;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .amoeba-logo{
+        display:flex;
+        color: #fff;
+        font-size: 1.9rem;
+        position: relative;
+        top: -52px;
+        left: 130px;
+    }
+
+    #nav-cart {
+        position: relative;
+        left: -1029px;
+        height: 40px;
+        top: -8px;
+    }
+    
+
+    .menu {
+        height: 30px;
+        position: relative;
+        top: -45px;
+        left: 20px;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    .hero-products {
+        padding-left: 17px;
+        padding-top: 50px;
+        font-size: 1.6rem;
+        color: rgb(255, 255, 255);
+        font-weight: lighter;
+    }
+
+    .pages-indicator {
+        padding-left: 160px;
+        font-size: 1rem;
+        color: #fff;
+        position: relative;
+        top: 1392px;
+    }
+
+    .fear-container {
+        height: 190px;
+        position: absolute;
+        left: 19px;
+        top: 220px;
+    }
+
+    .scream-img {
+        height: 190px;
+        position: absolute;
+        left: 208px;
+        top: 220px;
+    }
+
+    .nile-img {
+        height: 190px;
+        position: absolute;
+        left: 19px;
+        top: 450px;
+    }
+
+    .there-img {
+        height: 190px;
+        position: absolute;
+        left: 208px;
+        top: 450px;
+        z-index: 200;
+    }
+
+    .next-row {
+        position: absolute;
+        top: 460px;
+    }
+
+    .third-row {
+        position: absolute;
+        top: 920px;
+    }
+
+    .footer-container {
+        background-color: #eee;
+        padding-bottom: 4rem;
+        position: relative;
+        top: 380px;
+        left: 10px;
+        width: 360px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top: 10px;
+    }
+    
+    .footer {
+        width: 80%;
+        height: 30vh;
+        background-color: #eee;
+        color: #fff;
+        display: flex;
+        justify-content: start;
+        margin: 0 auto;
+    }
+    
+    .second-logo {
+        height: 130px;
+        width: 110px;
+        position: relative;
+        top: -340px;
+        left: -10px;
+    }
+    
+    #footer-email {
+        width: 220px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: .7rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: -22px;
+    top: -130px;
+    }
+    
+    #footer-email-btn {
+       display: none;
+    }
+    
+    .footer-container h2 {
+        font-size: .7rem;
+        display: flex;
+        justify-content: start;
+        text-align: start;
+        position: relative;
+        left: 150px;
+        top: -240px;
+        padding-bottom: 30px;
+        font-family: sans-serif;
+    }
+    
+    .sign-in-options {
+        padding-left: 650px;
+        position: relative;
+        top: 70px;
+        height: 30px;
+        left: -570px;
+    }
+    
+    .devider-line {
+        display: flex;
+        width: 320px;
+        position: relative;
+        top: -1700px;
+        left: 35px;
+    
+    }
+    
+    .newsletter {
+        display: flex;
+        font-family: sans-serif;
+        font-size: 20px;
+        position: relative;
+        top: -1680px;
+        padding-left: 32px;
+    
+    }
+    
+    .footer-btn{
+        display: flex;
+    font-size: .7rem;
+    background-color: lightsalmon;
+    height: 40px;
+    width: 85px;
+    position: relative;
+    top: -186px;
+    left: 212px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    }
+    
+    .devider-line1 {
+        display: flex;
+        width: 320px;
+        position: relative;
+        top: -400px;
+        left: -20px;
+    
+    }
+    
+    .footer-heading-footer-2 {
+        position:relative;
+        left: -160px;
+        top: 356px;
+        color:grey;
+    }
+    
+    #footer-heading {
+        position: relative;
+        top: 157.7px;
+        left: 130px;
+        color: grey;
+    }
+    
+    .footer-heading-footer-3 {
+        position: relative;
+        top: 314.5px;
+        color: grey;
+        left: 56px;
+    }
+    
+    .logo-desc {
+        display: none;
+        color: grey;
+        white-space: break-spaces;
+        position: fixed;
+        font-size: 14px;
+        top: 1900px;
+        left: 110px;
+    }
+
+    /* Sidebar Menu */
+
+    .sidemenu {
+        height: 1846px;
+        width:200px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color:#eee;
+        display: flex;
+        z-index: 3000;
+        margin-left: -200px;
+        transition: 0.5s;
+    }
+
+    .sidemenu ul {
+        list-style: none;
+        padding: 0px;
+        margin-top: 45px;
+        margin-left: 20px;
+        z-index: 1002;
+    }
+
+    .sidemenu a {
+        text-decoration: none;
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        color: grey;
+        display: block;
+        z-index: 1003;
+        font-family: 'Titillium Web', sans-serif;
+        transition: 0.1s;
+    }
+
+    .sidemenu a:hover {
+        color:#ff6308;
+    }
+
+    .exit-side {
+        height: 20px;
+        position: relative;
+        top: 20px;
+        left: 40px;
+        overflow: hidden;
+        display: block;
+    }
+    
+  
+
 
 }

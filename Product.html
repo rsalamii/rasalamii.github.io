@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/3styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script defer src="js/home.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -18,16 +19,20 @@
     <nav>
         <div class="nav-items">
             <div class="search">
-                <input type="text" class="search-box" placeholder="Search">
+                <input type="text" class="search-box" placeholder="Music...">
                 <button class="search-btn">search</button>
             </div>
             <img class="nav-menu" src="img/bars-solid.svg" alt="">
             <div class="nav-container">
                 <a href="/"><img src="img/navbar heart.svg" alt=""></a>
             <a href="/"><img src="img/navbar profile.svg" alt=""></a>
-            <a href="Cart.html"><img src="img/navbar cart.svg" alt=""></a>
+            <a href="Cart.html"><img id="nav-cart" src="img/navbar cart.svg" alt=""></a>
             </div>
         </div>
+
+        <h3 class="amoeba-logo">
+            AMOEBA
+        </h3>
         
         <div class="side-bar">
             <a href="index.html">
@@ -69,6 +74,17 @@
 
             </div>
         </div>
+
+        <div class="sidemenu" id="sideMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Home 2.html">Music</a></li>
+                <li><a href="Home 2.html">Movies </a></li>
+                <li><a href="Home 2.html">Merch</a></li>
+                <li><a href="Home 2.html">Stores</a></li>
+            </ul>
+            <img src="img/x-10327.svg" alt="" class="exit-side" onclick="closeMenu()">
+        </div>
         
         <script type="text/javascript">
             $(document).ready(function(){
@@ -83,6 +99,8 @@
 
     <!-- Hero Section -->
 
+    <img src="img/Menu.svg" alt="" class="menu" onclick="openMenu()">
+
     <img src="img/Fear Inoculum.png" alt="" class="actual-product">
     <h1 class="h1-fear-inoculum">Fear Inoculum</h1>
     <p class="product-desc"> 
@@ -90,9 +108,17 @@
         <b>Release Date: </b>    04/08/2022
         <b>Length:</b>     01:24:25
         <b>Format:</b>     Vinyl LP
+
+        European Pressing - Limited Edition
+        5 180g Black Vinyl - Each Record Is 
+        Etched On Back Side - Boxset Sleeve
     </p>
 
-    <h4 class="artist">by  Tool</h4>
+    <h4 class="artist">TOOL</h4>
+
+    <h4 class="desc">European Pressing - Limited Edition
+5 180g Black Vinyl - Each Record Is Etched On B Side - 
+Boxset Sleeve</h4>
 
     <h3 class="product-desc2">
         FREE STANDARD SHIPPING!

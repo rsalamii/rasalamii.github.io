@@ -7,6 +7,7 @@
     <title>Amoeba</title>
     <link rel="stylesheet" href="css/2styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="js/home.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -18,16 +19,21 @@
     <nav>
         <div class="nav-items">
             <div class="search">
-                <input type="text" class="search-box" placeholder="Search">
+                <input type="text" class="search-box" placeholder="Music...">
                 <button class="search-btn">search</button>
             </div>
             <img class="nav-menu" src="img/bars-solid.svg" alt="">
             <div class="nav-container">
                 <a href="/"><img src="img/navbar heart.svg" alt=""></a>
             <a href="/"><img src="img/navbar profile.svg" alt=""></a>
-            <a href="/"><img src="img/navbar cart.svg" alt=""></a>
+            <a href="/"><img id="nav-cart"  src="img/navbar cart.svg" alt=""></a>
             </div>
         </div>
+
+        
+        <h3 class="amoeba-logo">
+            AMOEBA
+        </h3>
         
         <div class="side-bar">
             <a href="index.html">
@@ -81,7 +87,22 @@
         </script>
     </nav>
 
+    <!-- Responsive -->
+
+    <div class="sidemenu" id="sideMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Movies </a></li>
+            <li><a href="#">Merch</a></li>
+            <li><a href="#">Stores</a></li>
+        </ul>
+        <img src="img/x-10327.svg" alt="" class="exit-side" onclick="closeMenu()">
+    </div>
+
     <!-- Hero Section -->
+
+    <img src="img/Menu.svg" alt="" class="menu" onclick="openMenu()">
 
     <h1 class="hero-products" >Products</h1>
     <h1 class="pages-indicator">1 of 245></h1>
@@ -94,7 +115,7 @@
 
 
     <a href="Product.html">
-        <img src="img/fear img.PNG" alt="" class="fear-container">
+        <img src="img/fear img.png" alt="" class="fear-container">
     </a>
 
     <div class="products-container">

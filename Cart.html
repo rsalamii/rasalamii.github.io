@@ -7,6 +7,7 @@
     <title>Amoeba</title>
     <link rel="stylesheet" href="css/4styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="js/home.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -21,21 +22,28 @@
     <nav>
         <div class="nav-items">
             <div class="search">
-                <input type="text" class="search-box" placeholder="Search">
+                <input type="text" class="search-box" placeholder="Music...">
                 <button class="search-btn">search</button>
             </div>
             <img class="nav-menu" src="img/bars-solid.svg" alt="">
             <div class="nav-container">
-                <a href="/"><img src="img/navbar heart.png" alt=""></a>
-            <a href="/"><img src="img/navbar profile.png" alt=""></a>
-            <a href="Cart.html"><img src="img/navbar cart.png" alt=""></a>
+                <a href="/"><img src="img/navbar heart.svg" alt=""></a>
+            <a href="/"><img src="img/navbar profile.svg" alt=""></a>
+            <a href="Cart.html"><img id="nav-cart"  src="img/navbar cart.svg" alt=""></a>
             </div>
             <img src="img/cart 1.svg" alt="" class="cart-1">
         </div>
+
+          
+        <h3 class="amoeba-logo">
+            AMOEBA
+        </h3>
         
         <div class="side-bar">
             <a href="index.html">
                 <img class="side-logo" src="img/Amoeba Logo.svg" alt="">
+
+                
 
             </a>
 
@@ -85,62 +93,96 @@
         </script>
     </nav>
 
+    <!-- RESPONSIVE -->
+
+    <div class="sidemenu" id="sideMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Home 2.html">Music</a></li>
+            <li><a href="Home 2.html">Movies </a></li>
+            <li><a href="Home 2.html">Merch</a></li>
+            <li><a href="Home 2.html">Stores</a></li>
+        </ul>
+        <img src="img/x-10327.svg" alt="" class="exit-side" onclick="closeMenu()">
+    </div>
+
+
     <!-- Hero Section -->
 
+    <img src="img/Menu.svg" alt="" class="menu" onclick="openMenu()">
+
     <h1 class="h1-cart">Cart</h1>
+
+
+<div class="cart-container"></div>
+
+   
     <img src="img/cart product.svg" alt="" class="cart-product">
     <img src="img/cart table.svg" alt="" class="cart-table">
 
+
+
     <div class="cart-headings">
-        <h2>Product                     </h2>
-
-        <h2>Price                         </h2>
-
-        <h2>Quantity                    </h2>
-
-        <h2>Total</h2>
+        <h2>                                                                                              Quantity                    </h2>
     </div>
 
     <div class="cart-answers">
-        <h2>Fear Inoculum              </h2>
+        <h2>Fear Inoculum
 
-        <h2>AUD $70.99                                                         </h2>
+        </h2>
 
-        <h2>AUD $70.99                    </h2>
+        <h3>
+ <b>Price: $70.99</b>
+                    </h2>
+
     </div>
 
     <img src="img/cart quantity.svg" alt="" class="cart-quantity">
+
+
+
+
 
         <a class="page-payment" href="Payment.html">
             <button class="add-cart">PROCEED TO CHECKOUT</button>
         </a>
 
-        <button class="add-to-cart">ADD+</button>
+    <a href="Home 2.html">
+        <button class="add-to-cart">Add More Products</button>
+    </a>
+
+    
     
 
-        
      <!-- Footer Section -->
-
      <div class="footer-container">
         <div class="footer">
-            <div class="footer-heading footer-1">
-                <h2>Blog</h2>
+            <div>
+                <h2 id="footer-heading" >Blog</h2>
                 <div class="footer-heading-footer-2">
                     <h2>Amoeba Vinyl Club</h2>
                 </div>
                 <div class="footer-heading-footer-3">
                 <h2>Support and FAQ</h2>
             </div>
-
+    
             <img src="img/logo.svg" alt="" class="second-logo">
-
+    
+            <h3 class="logo-desc">
+                Copyright © 2022 Amoeba,
+                All Rights Reserved. 
+                Amoeba Music and logo
+                are trademarks of Amoeba Inc</h3>
+    
             <img src="img/Face, Twitter, Google.svg" alt="" class="sign-in-options">
             <div class="footer-email-form">
                 <input type="email" placeholder="Enter your email address" id="footer-email">
                 <input type="sumbit" value="Subscribe" id="footer-email-btn">
+                <button class="footer-btn">Subscribe</button>
             </div>
         </div>
     </div>
+    
 
         
     </body>
