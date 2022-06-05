@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoeba</title>
+    <link rel="stylesheet" href="css/4styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    
+    <nav>
+        <div class="nav-items">
+            <div class="search">
+                <input type="text" class="search-box" placeholder="Search">
+                <button class="search-btn">search</button>
+            </div>
+            <img class="nav-menu" src="img/bars-solid.svg" alt="">
+            <div class="nav-container">
+                <a href="/"><img src="img/navbar heart.png" alt=""></a>
+            <a href="/"><img src="img/navbar profile.png" alt=""></a>
+            <a href="Cart.html"><img src="img/navbar cart.png" alt=""></a>
+            </div>
+            <img src="img/cart 1.svg" alt="" class="cart-1">
+        </div>
+        
+        <div class="side-bar">
+            <a href="index.html">
+                <img class="side-logo" src="img/Amoeba Logo.svg" alt="">
+
+            </a>
+
+            <div class="menu">
+                <div class="item">
+                    <a class="sub-btn" href="#">Music<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">CD & Vinyl</a>
+                        <a href="#" class="sub-item">Top Sellers</a>
+                        <a href="#" class="sub-item">Popular Music</a>
+                    </div>
+                </div>   
+                <div class="item">
+                    <a class="sub-btn" href="#">Movies<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Popular Movies</a>
+                        <a href="#" class="sub-item">DVD and VHS</a>
+                    </div>
+                </div>   
+                <div class="item">
+                    <a class="sub-btn" href="#">Merch<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Gifts</a>
+                        <a href="#" class="sub-item">Band Gear</a>
+                    </div>
+                </div>   
+                <div class="item">
+                    <a class="sub-btn" href="#">Stores<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Overview</a>
+                        <a href="#" class="sub-item">Blog</a>
+                        <a href="#" class="sub-item">FAQ</a>
+                    </div>
+                </div>   
+
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //jquery for toggle sub menus
+                $('.sub-btn').click(function(){
+                    $(this).next('.sub-menu').slideToggle();
+                    $(this).find('.dropdown').toggleClass('rotate');
+                });
+            });
+        </script>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <h1 class="h1-cart">Cart</h1>
+    <img src="img/cart product.svg" alt="" class="cart-product">
+    <img src="img/cart table.svg" alt="" class="cart-table">
+
+    <div class="cart-headings">
+        <h2>Product                     </h2>
+
+        <h2>Price                         </h2>
+
+        <h2>Quantity                    </h2>
+
+        <h2>Total</h2>
+    </div>
+
+    <div class="cart-answers">
+        <h2>Fear Inoculum              </h2>
+
+        <h2>AUD $70.99                                                         </h2>
+
+        <h2>AUD $70.99                    </h2>
+    </div>
+
+    <img src="img/cart quantity.svg" alt="" class="cart-quantity">
+
+        <a class="page-payment" href="Payment.html">
+            <button class="add-cart">PROCEED TO CHECKOUT</button>
+        </a>
+
+        <button class="add-to-cart">ADD+</button>
+    
+
+        
+     <!-- Footer Section -->
+
+     <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Blog</h2>
+                <div class="footer-heading-footer-2">
+                    <h2>Amoeba Vinyl Club</h2>
+                </div>
+                <div class="footer-heading-footer-3">
+                <h2>Support and FAQ</h2>
+            </div>
+
+            <img src="img/logo.svg" alt="" class="second-logo">
+
+            <img src="img/Face, Twitter, Google.svg" alt="" class="sign-in-options">
+            <div class="footer-email-form">
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="sumbit" value="Subscribe" id="footer-email-btn">
+            </div>
+        </div>
+    </div>
+
+        
+    </body>

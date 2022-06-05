@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoeba</title>
+    <link rel="stylesheet" href="css/2styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    
+    <nav>
+        <div class="nav-items">
+            <div class="search">
+                <input type="text" class="search-box" placeholder="Search">
+                <button class="search-btn">search</button>
+            </div>
+            <img class="nav-menu" src="img/bars-solid.svg" alt="">
+            <div class="nav-container">
+                <a href="/"><img src="img/navbar heart.svg" alt=""></a>
+            <a href="/"><img src="img/navbar profile.svg" alt=""></a>
+            <a href="/"><img src="img/navbar cart.svg" alt=""></a>
+            </div>
+        </div>
+        
+        <div class="side-bar">
+            <a href="index.html">
+                <img class="side-logo" src="img/Amoeba Logo.svg" alt="">
+
+            </a>
+
+            <div class="menu">
+                <div class="item">
+                    <a class="sub-btn" href="#">Music<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">CD & Vinyl</a>
+                        <a href="#" class="sub-item">Top Sellers</a>
+                        <a href="#" class="sub-item">Popular Music</a>
+                    </div>
+                </div>   
+                <div class="item">
+                    <a class="sub-btn" href="#">Movies<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Popular Movies</a>
+                        <a href="#" class="sub-item">DVD and VHS</a>
+                    </div>
+                </div>   
+                <div class="item">
+                    <a class="sub-btn" href="#">Merch<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Gifts</a>
+                        <a href="#" class="sub-item">Band Gear</a>
+                    </div>
+                </div>   
+                <div class="item">
+                    <a class="sub-btn" href="#">Stores<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Overview</a>
+                        <a href="#" class="sub-item">Blog</a>
+                        <a href="#" class="sub-item">FAQ</a>
+                    </div>
+                </div>   
+
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //jquery for toggle sub menus
+                $('.sub-btn').click(function(){
+                    $(this).next('.sub-menu').slideToggle();
+                    $(this).find('.dropdown').toggleClass('rotate');
+                });
+            });
+        </script>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <h1 class="hero-products" >Products</h1>
+    <h1 class="pages-indicator">1 of 245></h1>
+
+    <img src="img/there img.PNG" alt="" class="there-img">
+
+    <img src="img/nile img.PNG" alt="" class="nile-img">
+
+    <img src="img/scream img.PNG" alt="" class="scream-img">
+
+
+    <a href="Product.html">
+        <img src="img/fear img.PNG" alt="" class="fear-container">
+    </a>
+
+    <div class="products-container">
+        <img class="product-image" src="img/Scream.png" alt="">
+        <h3>Scream</h3>
+        <h4>Movies</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="products-container1">
+        <img class="product-image" src="img/Unlimited Love.svg" alt="">
+        <h3 class="h3-love">Unlimited Love</h3>
+        <h4 class="h4-love">Music</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+    <div class="products-container2">
+        <img class="product-image" src="img/Fear Inoculum.png" alt="">
+        <a href="Product.html">
+        <h3 class="h3-fear">Fear Inoculum</h3>
+    </a>
+        <h4 class="h4-fear">Music</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="products-container3">
+        <img class="product-image" src="img/A Way Forward.svg" alt="">
+        <h3 class="h3-forward">A Way Forward</h3>
+        <h4 class="h4-forward">Music</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="next-row">
+        <img src="img/there img.PNG" alt="" class="there-img">
+
+        <img src="img/nile img.PNG" alt="" class="nile-img">
+
+        <img src="img/scream img.PNG" alt="" class="scream-img">
+
+        <img src="img/fear img.PNG" alt="" class="fear-container">
+    </div>
+
+
+
+    <div class="products-secondrow">
+    <div class="products-container">
+        <img class="product-image" src="img/You Belong There.png" alt="">
+        <h3>You Belong There</h3>
+        <h4>Movies</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="products-container1">
+        <img class="product-image" src="img/Parallel Mothers.png" alt="">
+        <h3 class="h3-love">Parallel Mothers</h3>
+        <h4 class="h4-love">Movie</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="products-container2">
+        <img class="product-image" src="img/Fear of Dawn.png" alt="">
+        <h3 class="h3-fear">Fear of The Dawn</h3>
+        <h4 class="h4-fear">Music</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="products-container3">
+        <img class="product-image" src="img/Unlimited Love.svg" alt="">
+        <h3 class="h3-forward">Unlimited Love</h3>
+        <h4 class="h4-forward">Music</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+</div>
+
+<div class="third-row">
+    <img src="img/there img.PNG" alt="" class="there-img">
+
+    <img src="img/nile img.PNG" alt="" class="nile-img">
+
+    <img src="img/scream img.PNG" alt="" class="scream-img">
+
+    <img src="img/fear img.PNG" alt="" class="fear-container">
+</div>
+
+
+<div class="products-thirdrow">
+    <div class="products-container">
+        <img class="product-image" src="img/You Belong There.png" alt="">
+        <h3>You Belong There</h3>
+        <h4>Movies</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="products-container1">
+        <img class="product-image" src="img/Parallel Mothers.png" alt="">
+        <h3 class="h3-love">Parallel Mothers</h3>
+        <h4 class="h4-love">Movie</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="products-container2">
+        <img class="product-image" src="img/Fear of Dawn.png" alt="">
+        <h3 class="h3-fear">Fear of The Dawn</h3>
+        <h4 class="h4-fear">Music</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+
+    <div class="products-container3">
+        <img class="product-image" src="img/Unlimited Love.svg" alt="">
+        <h3 class="h3-forward">Unlimited Love</h3>
+        <h4 class="h4-forward">Music</h4>
+        <img class="stars-rating" src="img/stars.svg" alt="">
+    </div>
+</div>
+
+
+<div class="footer-container">
+    <div class="footer">
+        <div>
+            <h2 id="footer-heading" >Blog</h2>
+            <div class="footer-heading-footer-2">
+                <h2>Amoeba Vinyl Club</h2>
+            </div>
+            <div class="footer-heading-footer-3">
+            <h2>Support and FAQ</h2>
+        </div>
+
+        <img src="img/logo.svg" alt="" class="second-logo">
+
+        <h3 class="logo-desc">
+            Copyright © 2022 Amoeba,
+            All Rights Reserved. 
+            Amoeba Music and logo
+            are trademarks of Amoeba Inc</h3>
+
+        <img src="img/Face, Twitter, Google.svg" alt="" class="sign-in-options">
+        <div class="footer-email-form">
+            <input type="email" placeholder="Enter your email address" id="footer-email">
+            <input type="sumbit" value="Subscribe" id="footer-email-btn">
+            <button class="footer-btn">Subscribe</button>
+        </div>
+    </div>
+</div>
+
+
+
+</body>  
+    
